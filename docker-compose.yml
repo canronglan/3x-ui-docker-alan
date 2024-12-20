@@ -6,12 +6,14 @@ services:
         privileged: true
         network_mode: host
         environment:
-            - ID=4
-            - HOST=alisgp
+            - ID=5
+            - HOST=lisaus1
             - XRAY_VMESS_AEAD_FORCED=false
-        hostname: alisgp
+            - NPS_SERVER=sgnat1.biaotee.top
+            - VKEY=mrhb35juihx1m79p
         container_name: 3x-ui-alan
         volumes:
             - $PWD/db/:/etc/x-ui/
             - $PWD/cert/:/root/cert/
-
+            - $PWD/nps/:/app/nps/
+            - $PWD/npc/:/app/npc/
