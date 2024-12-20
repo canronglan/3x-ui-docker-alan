@@ -11,6 +11,7 @@ services:
             - XRAY_VMESS_AEAD_FORCED=false
             - NPS_SERVER=sgnat1.biaotee.top
             - VKEY=mrhb35juihx1m79p
+            - TINY_SUB=192.168.125.0
         container_name: 3x-ui-alan
         volumes:
             - $PWD/db/:/etc/x-ui/
